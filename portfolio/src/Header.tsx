@@ -3,8 +3,18 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import NavLinks from "./NavLinks";
 import SocialLinks from "./SocialLinks";
+import { type Translation, type Language } from "./translations";
+import LanguageSelector from "./LanguageSelector";
 
-function Header() {
+function Header({
+  t,
+  language,
+  setLanguage,
+}: {
+  t: Translation;
+  language: Language;
+  setLanguage: (language: Language) => void;
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,9 +24,10 @@ function Header() {
           <span>Céline</span>
         </div>
         {/* desktop */}
-        <NavLinks className="hidden md:flex justify-self-center gap-6" />
+        <NavLinks className="hidden md:flex justify-self-center gap-6" t={t} />
         <div className="justify-self-end gap-4">
           <SocialLinks className="hidden md:flex" />
+          <LanguageSelector language={language} setLanguage={setLanguage} />
         </div>
         {/* mobile */}
         <button
@@ -32,6 +43,7 @@ function Header() {
           <NavLinks
             className="flex flex-col items-end"
             onLinkClick={() => setIsOpen(false)}
+            t={t}
           />
           <SocialLinks onLinkClick={() => setIsOpen(false)} />
         </div>
