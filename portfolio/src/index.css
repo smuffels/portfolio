@@ -3,7 +3,8 @@
 @theme {
   --color-default: #009cd9;
   --color-highlight: #05f2db;
-  --color-background: #32154f;
+  --color-background: #1c113d;
+  --color-elementbg: #0c1c29;
 
   --font-title: "Silkscreen";
   --font-default: "RobotoMono";
