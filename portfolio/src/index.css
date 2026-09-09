@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@theme {
+  --color-default: #009cd9;
+  --color-highlight: #05f2db;
+  --color-background: #32154f;
+
+  --font-title: "Silkscreen";
+  --font-default: "RobotoMono";
+  --font-italic: "RobotoMonoItalic";
+  --font-semibold: "RobotoMonoSemiBold";
+  --font-semibolditalic: "RobotoMonoSemiBoldItalic";
+}
+
+@font-face {
+  font-family: Silkscreen;
+  src: url("./assets/fonts/Silkscreen-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RobotoMono;
+  src: url("./assets/fonts/RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RobotoMonoItalic;
+  src: url("./assets/fonts/RobotoMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RobotoMonoSemiBold;
+  src: url("./assets/fonts/RobotoMono-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RobotoMonoSemiBoldItalic;
+  src: url("./assets/fonts/RobotoMono-SemiBoldItalic.ttf") format("truetype");
+}

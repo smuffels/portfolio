@@ -1,17 +1,30 @@
 import { type Language } from "./translations";
 
 function LanguageSelector({
+  className,
   language,
   setLanguage,
 }: {
+  className?: string;
   language: Language;
   setLanguage: (language: Language) => void;
 }) {
   return (
-    <div>
-      <button onClick={() => setLanguage("de")}>de</button>
+    <div className={className}>
+      <button
+        onClick={() => setLanguage("de")}
+        className={language === "de" ? "text-highlight" : ""}
+      >
+        de
+      </button>
       <span>|</span>
-      <button onClick={() => setLanguage("en")}> en</button>
+      <button
+        onClick={() => setLanguage("en")}
+        className={language === "en" ? "text-highlight" : ""}
+      >
+        {" "}
+        en
+      </button>
     </div>
   );
 }

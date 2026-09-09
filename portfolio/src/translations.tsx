@@ -7,7 +7,7 @@ export const translations = {
   en: {
     home: "Home",
     experience: "Experience",
-    projects: "Projekts",
+    projects: "Projects",
   },
 };
 
