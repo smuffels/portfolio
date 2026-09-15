@@ -1,6 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { useState } from "react";
 import type { Translation } from "./translations";
+import TypewriterEffect from "./TypewriterEffect";
 
 function Aboutme({ t }: { t: Translation }) {
   const buttons = {
@@ -44,9 +45,15 @@ function Aboutme({ t }: { t: Translation }) {
       </div>
 
       <div className="bg-elementbg rounded-lg border-2 border-default w-16 md: w-92 break-all">
-        {selectedAboutme == buttons.aboutme && <p>{t.aboutme}</p>}
-        {selectedAboutme == buttons.it && <p>{t.aboutmeIt}</p>}
-        {selectedAboutme == buttons.hobbys && <p>{t.aboutmeHobbys}</p>}
+        {selectedAboutme == buttons.aboutme && (
+          <TypewriterEffect text={t.aboutme} />
+        )}
+        {selectedAboutme == buttons.it && (
+          <TypewriterEffect text={t.aboutmeIt} />
+        )}
+        {selectedAboutme == buttons.hobbys && (
+          <TypewriterEffect text={t.aboutmeHobbys} />
+        )}
       </div>
     </section>
   );
