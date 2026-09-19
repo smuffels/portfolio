@@ -1,7 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { useState } from "react";
-import type { Translation } from "./translations";
-import TypewriterEffect from "./TypewriterEffect";
+import type { Translation } from "../data/translations";
+import TypewriterEffect from "../TypewriterEffect";
 
 function Aboutme({ t }: { t: Translation }) {
   const buttons = {
