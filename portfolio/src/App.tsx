@@ -1,8 +1,9 @@
-import Header from "./Header";
+import Header from "./sections/Header.tsx";
 import { useState } from "react";
-import { translations, type Language } from "./translations";
-import Aboutme from "./Aboutme";
-import Experience from "./Experience";
+import { translations, type Language } from "./data/translations";
+import Aboutme from "./sections/Aboutme";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
 
 function App() {
   const [language, setLanguage] = useState<Language>("de");
@@ -14,12 +15,7 @@ function App() {
       <main className="flex-1 flex flex-col">
         <Aboutme t={t} />
         <Experience t={t} />
-        <section
-          id="projects"
-          className="flex-1 flex items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
-        >
-          Bereich 3 hier
-        </section>
+        <Projects t={t} />
       </main>
 
       <footer>Footer</footer>
