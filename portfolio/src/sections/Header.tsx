@@ -1,10 +1,10 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import NavLinks from "../NavLinks";
-import SocialLinks from "../SocialLinks";
+import NavLinks from "../components/NavLinks";
+import SocialLinks from "../components/SocialLinks";
 import { type Translation, type Language } from "../data/translations";
-import LanguageSelector from "../LanguageSelector";
+import LanguageSelector from "../components/LanguageSelector";
 
 function Header({
   t,

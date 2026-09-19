@@ -1,4 +1,4 @@
-import type { Translation } from "./data/translations";
+import type { Translation } from "../data/translations";
 
 function Experience({ t }: { t: Translation }) {
   return (

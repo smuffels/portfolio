@@ -1,4 +1,4 @@
-import { type Language } from "./data/translations";
+import { type Language } from "../data/translations";
 
 function LanguageSelector({
   className,
