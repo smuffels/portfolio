@@ -2,6 +2,7 @@ import Header from "./Header";
 import { useState } from "react";
 import { translations, type Language } from "./translations";
 import Aboutme from "./Aboutme";
+import Experience from "./Experience";
 
 function App() {
   const [language, setLanguage] = useState<Language>("de");
@@ -12,12 +13,7 @@ function App() {
       <Header t={t} language={language} setLanguage={setLanguage} />
       <main className="flex-1 flex flex-col">
         <Aboutme t={t} />
-        <section
-          id="experience"
-          className="flex-1 flex items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
-        >
-          Bereich 2 hier
-        </section>
+        <Experience t={t} />
         <section
           id="projects"
           className="flex-1 flex items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
