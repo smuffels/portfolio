@@ -12,6 +12,7 @@ function Projects({ t }: { t: Translation }) {
       progress: 5,
       title: t.project1title,
       summary: t.project1summary,
+      github: "https://github.com/smuffels/Game_of_Life",
     },
     {
       id: 2,
@@ -19,6 +20,7 @@ function Projects({ t }: { t: Translation }) {
       progress: 5,
       title: t.project2title,
       summary: t.project2summary,
+      github: "https://github.com/smuffels/health_but_better",
     },
   ];
 

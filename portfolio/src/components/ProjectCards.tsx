@@ -1,5 +1,6 @@
 import type { Project } from "../CarouselLogic";
 import HeartProgress from "./HeartProgress";
+import { DiGithubBadge } from "react-icons/di";
 
 function ProjectCards({
   project,
@@ -27,6 +28,12 @@ function ProjectCards({
 
       <div className="absolute inset-0 flex items-center justify-center">
         <p className={`text-center px-4 ${textCustom}`}>{project.summary}</p>
+      </div>
+
+      <div className="absolute top-3 right-3">
+        <a href={project.github} target="_blank">
+          <DiGithubBadge className="size-6" />
+        </a>
       </div>
     </div>
   );

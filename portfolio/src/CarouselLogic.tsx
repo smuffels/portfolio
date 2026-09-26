@@ -6,4 +6,5 @@ export interface Project {
   progress: 1 | 2 | 3 | 4 | 5;
   title: string;
   summary: string;
+  github: string;
 }
