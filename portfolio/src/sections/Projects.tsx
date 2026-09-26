@@ -34,7 +34,7 @@ function Projects({ t }: { t: Translation }) {
       <div className="flex items-center gap-2">
         <ProjectCards
           project={projects[0]}
-          className="opacity-50"
+          className="hidden md:block opacity-50"
         ></ProjectCards>
         <button className="bg-elementbg group hover:bg-default h-60 w-10 flex items-center justify-center rounded-lg">
           <AiFillCaretLeft className="size-6 group-hover:text-elementbg" />
@@ -49,7 +49,7 @@ function Projects({ t }: { t: Translation }) {
         </button>
         <ProjectCards
           project={projects[0]}
-          className="opacity-50"
+          className="hidden md:block opacity-50"
         ></ProjectCards>
       </div>
     </section>
