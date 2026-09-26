@@ -13,6 +13,7 @@ function Projects({ t }: { t: Translation }) {
       title: t.project1title,
       summary: t.project1summary,
       github: "https://github.com/smuffels/Game_of_Life",
+      techstack: "swift",
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ function Projects({ t }: { t: Translation }) {
       title: t.project2title,
       summary: t.project2summary,
       github: "https://github.com/smuffels/health_but_better",
+      techstack: "swift",
     },
   ];
 

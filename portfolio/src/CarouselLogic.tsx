@@ -7,4 +7,5 @@ export interface Project {
   title: string;
   summary: string;
   github: string;
+  techstack: string;
 }

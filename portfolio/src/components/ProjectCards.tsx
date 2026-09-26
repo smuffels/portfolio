@@ -30,6 +30,10 @@ function ProjectCards({
         <p className={`text-center px-4 ${textCustom}`}>{project.summary}</p>
       </div>
 
+      <div className={`absolute bottom-3 left-3 ${textCustom}`}>
+        {project.techstack}
+      </div>
+
       <div className="absolute top-3 right-3">
         <a href={project.github} target="_blank">
           <DiGithubBadge className="size-6" />
