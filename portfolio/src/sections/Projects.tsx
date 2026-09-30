@@ -18,11 +18,20 @@ function Projects({ t }: { t: Translation }) {
     },
     {
       id: 2,
+      image: "src/assets/images/health_but_better.png",
       progress: 3,
       title: t.project2title,
       summary: t.project2summary,
       github: "https://github.com/smuffels/health_but_better",
       techstack: "swift",
+    },
+    {
+      id: 3,
+      progress: 4,
+      title: t.project3title,
+      summary: t.project3summary,
+      github: "https://github.com/smuffels/portfolio",
+      techstack: "react, tailwind css, vite",
     },
   ];
 
@@ -48,12 +57,19 @@ function Projects({ t }: { t: Translation }) {
           <AiFillCaretLeft className="size-6 group-hover:text-elementbg" />
         </button>
 
-        {/* Project middle */}
-        <ProjectCards
-          project={current}
-          className="border-2"
-          isActive
-        ></ProjectCards>
+        <div className="relative">
+          {/* title */}
+          <div className="absolute -top-16 w-92 h-12 rounded-lg bg-elementbg text-highlight flex items-center justify-center font-title border-2 border-default">
+            {current.title}
+          </div>
+
+          {/* Project middle */}
+          <ProjectCards
+            project={current}
+            className="border-2"
+            isActive
+          ></ProjectCards>
+        </div>
 
         {/* button right */}
         <button

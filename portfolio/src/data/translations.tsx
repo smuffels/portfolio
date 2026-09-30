@@ -12,6 +12,8 @@ export const translations = {
     project1summary: "das ist das spiel game of life",
     project2title: "Health but better",
     project2summary: "wow so gesund",
+    project3title: "Portfolio",
+    project3summary: "das ist meine Portfolio Webseite",
   },
   en: {
     home: "Home",
@@ -26,6 +28,8 @@ export const translations = {
     project1summary: "this is the game game of life",
     project2title: "Health but better",
     project2summary: "wow so health so good",
+    project3title: "Portfolio",
+    project3summary: "this is my portfolio website",
   },
 };
 
