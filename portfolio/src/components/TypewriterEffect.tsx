@@ -17,7 +17,7 @@ function TypewriterEffect({ text }: { text: string }) {
     return () => clearInterval(interval);
   }, [text]);
 
-  return <p>{displayedText}</p>;
+  return <span>{displayedText}</span>;
 }
 
 export default TypewriterEffect;

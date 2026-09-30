@@ -2,6 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { useState } from "react";
 import type { Translation } from "../data/translations";
 import TypewriterEffect from "../components/TypewriterEffect";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 function Aboutme({ t }: { t: Translation }) {
   const buttons = {
@@ -44,15 +45,30 @@ function Aboutme({ t }: { t: Translation }) {
         ></FaReact>
       </div>
 
-      <div className="bg-elementbg rounded-lg border-2 border-default w-16 md: w-92 break-all">
+      <div className="bg-elementbg rounded-lg border-2 border-default w-16 w-92 md:w-184 break-all">
         {selectedAboutme == buttons.aboutme && (
-          <TypewriterEffect text={t.aboutme} />
+          <TypewriterEffect text={t.aboutme.aboutmee} />
         )}
         {selectedAboutme == buttons.it && (
-          <TypewriterEffect text={t.aboutmeIt} />
+          <TypewriterEffect text={t.aboutme.aboutmeIt} />
         )}
         {selectedAboutme == buttons.hobbys && (
-          <TypewriterEffect text={t.aboutmeHobbys} />
+          <div className="ml-2 mr-2">
+            <TypewriterEffect text={t.aboutme.hobbysIntro} />
+
+            <ul className="list-disc list-inside text-left mt-2 mb-2">
+              {t.aboutme.hobbys.map((hobby: string, i: number) => (
+                <li key={i}>
+                  <TypewriterEffect text={hobby} />
+                </li>
+              ))}
+            </ul>
+
+            <TypewriterEffect text={t.aboutme.hobbysOutro} />
+            <a href="https://www.instagram.com/fresh_trance/" target="_blank">
+              <AiOutlineInstagram className="size-6" />
+            </a>
+          </div>
         )}
       </div>
     </section>
