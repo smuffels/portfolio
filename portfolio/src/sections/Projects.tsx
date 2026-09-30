@@ -51,8 +51,8 @@ function Projects({ t }: { t: Translation }) {
         {/* Project middle */}
         <ProjectCards
           project={current}
-          textCustom="text-highlight"
           className="border-2"
+          isActive
         ></ProjectCards>
 
         {/* button right */}
