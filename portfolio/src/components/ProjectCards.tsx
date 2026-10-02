@@ -14,7 +14,7 @@ function ProjectCards({
   const textColor = isActive ? "text-highlight" : "text-default";
   return (
     <div
-      className={`relative w-92 h-92 overflow-hidden rounded-lg ${className}`}
+      className={`relative w-92 h-92 md:h-128 md:w-128 overflow-hidden rounded-lg ${className}`}
     >
       {project.image ? (
         <img

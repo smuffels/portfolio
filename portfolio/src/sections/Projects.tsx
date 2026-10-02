@@ -59,7 +59,7 @@ function Projects({ t }: { t: Translation }) {
 
         <div className="relative">
           {/* title */}
-          <div className="absolute -top-16 w-92 h-12 rounded-lg bg-elementbg text-highlight flex items-center justify-center font-title border-2 border-default">
+          <div className="absolute -top-16 w-92 h-12 md:w-128 rounded-lg bg-elementbg text-highlight flex items-center justify-center font-title border-2 border-default">
             {current.title}
           </div>
 

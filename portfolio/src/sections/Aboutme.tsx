@@ -66,7 +66,7 @@ function Aboutme({ t }: { t: Translation }) {
 
             <TypewriterEffect text={t.aboutme.hobbysOutro} />
             <a href="https://www.instagram.com/fresh_trance/" target="_blank">
-              <AiOutlineInstagram className="size-6" />
+              <AiOutlineInstagram className="size-6 mt-2" />
             </a>
           </div>
         )}
