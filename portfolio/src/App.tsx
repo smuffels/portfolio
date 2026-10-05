@@ -4,6 +4,7 @@ import { translations, type Language } from "./data/translations";
 import Aboutme from "./sections/Aboutme";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
+import Footer from "./sections/Footer.tsx";
 
 function App() {
   const [language, setLanguage] = useState<Language>("de");
@@ -18,7 +19,7 @@ function App() {
         <Projects t={t} />
       </main>
 
-      <footer>Footer</footer>
+      <Footer />
     </div>
   );
 }
