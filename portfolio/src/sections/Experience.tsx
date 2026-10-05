@@ -36,19 +36,16 @@ function Experience({ t }: { t: Translation }) {
           src="src/assets/images/nintendo_console.svg"
           className="w-92 md:w-184"
         ></img>
-        {/* enter buttons */}
-        <button className="bg-background text-default hover:text-highlight rounded-full absolute block top-[45.5%] left-[83%]">
-          <AiOutlineCheck className="size-6 md:size-12 font-semibold" />
+        {/* bottom buttons */}
+        <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[45.5%] left-[83%]">
+          <p className="text-2xl  font-semibold">A</p>
         </button>
-        <button className="bg-background text-default hover:text-highlight rounded-full absolute block top-[55.5%] left-[74.5%]">
-          <AiOutlineCheck className="size-6 md:size-12 font-semibold" />
+        <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[55.3%] left-[74.6%]">
+          <p className=" text-2xl font-semibold">B</p>
         </button>
-        {/* back buttons */}
+        {/* top buttons */}
         <button className="bg-background text-default hover:text-highlight rounded-full absolute top-[36%] left-[74%]">
-          <AiOutlineClose className="size-6 md:size-12 font-semibold" />
-        </button>
-        <button className="bg-background text-default hover:text-highlight rounded-full absolute top-[36%] left-[74%]">
-          <AiOutlineClose className="size-6 md:size-12 font-semibold" />
+          <AiOutlineCheck className="size-6 md:size-12 font-semibold" />
         </button>
         <button className="bg-background text-default hover:text-highlight rounded-full absolute top-[46%] left-[65.5%]">
           <AiOutlineClose className="size-6 md:size-12 font-semibold" />
@@ -71,9 +68,13 @@ function Experience({ t }: { t: Translation }) {
         </button>
 
         {/* select button */}
-        <button className="bg-background text-default hover:text-highlight rounded-full w-14 h-6 rotate-140 absolute top-[52%] left-[38.3%]"></button>
+        <button className="bg-background text-default hover:text-highlight rounded-full w-14 h-6 rotate-140 absolute top-[52%] left-[38.3%]">
+          <p className="font-semibold rotate-180">select</p>
+        </button>
         {/* start button */}
-        <button className="bg-background text-default hover:text-highlight rounded-full w-14 h-6 rotate-140 absolute top-[52%] left-[48.6%]"></button>
+        <button className="bg-background text-default hover:text-highlight rounded-full w-14 h-6 rotate-140 absolute top-[52%] left-[48.6%]">
+          <p className="font-semibold rotate-180">start</p>
+        </button>
       </div>
     </section>
   );
