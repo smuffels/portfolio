@@ -22,6 +22,16 @@ export const translations = {
     project3title: "Portfolio",
     project3summary:
       "Dies ist meine Portfolio-Website, auf der Sie, lieber Nutzer, sich gerade befinden.",
+
+    workExperience: "Arbeitserfahrung",
+    clubExperience: "Vereinserfahrung",
+
+    cybersystems: "cybersstems text",
+    flumerics: "flumerics text",
+
+    alias: "alias text",
+    zur: "zur text",
+    frackwoche: "frackwoche text",
   },
   en: {
     home: "Home",
@@ -46,6 +56,16 @@ export const translations = {
     project3title: "Portfolio",
     project3summary:
       "This is the my portfolio website that you, dear user, are currently on.",
+
+    workExperience: "work experience",
+    clubExperience: "club experience",
+
+    cybersystems: "cybersstems text",
+    flumerics: "flumerics text",
+
+    alias: "alias text",
+    zur: "zur text",
+    frackwoche: "frackwoche text",
   },
 };
 
