@@ -38,10 +38,10 @@ function Experience({ t }: { t: Translation }) {
         ></img>
         {/* bottom buttons */}
         <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[45.5%] left-[83%]">
-          <p className="text-2xl  font-semibold">A</p>
+          <p className="md:text-2xl  font-semibold">A</p>
         </button>
         <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[55.3%] left-[74.6%]">
-          <p className=" text-2xl font-semibold">B</p>
+          <p className=" md:text-2xl font-semibold">B</p>
         </button>
         {/* top buttons */}
         <button className="bg-background text-default hover:text-highlight rounded-full absolute top-[36%] left-[74%]">
@@ -68,12 +68,18 @@ function Experience({ t }: { t: Translation }) {
         </button>
 
         {/* select button */}
-        <button className="bg-background text-default hover:text-highlight rounded-full w-14 h-6 rotate-140 absolute top-[52%] left-[38.3%]">
-          <p className="font-semibold rotate-180">select</p>
+        <button className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[38.3%]">
+          <p className="hidden justify-center md:flex font-semibold rotate-180">
+            select
+          </p>
+          <p className="md:hidden font-semibold text-xs rotate-180">slct</p>
         </button>
         {/* start button */}
-        <button className="bg-background text-default hover:text-highlight rounded-full w-14 h-6 rotate-140 absolute top-[52%] left-[48.6%]">
-          <p className="font-semibold rotate-180">start</p>
+        <button className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[48.6%]">
+          <p className="hidden justify-center md:flex font-semibold rotate-180">
+            start
+          </p>
+          <p className="md:hidden font-semibold text-xs rotate-180">strt</p>
         </button>
       </div>
     </section>
