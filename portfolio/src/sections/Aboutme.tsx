@@ -19,30 +19,33 @@ function Aboutme({ t }: { t: Translation }) {
       className="grid items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
     >
       <div className="flex justify-center gap-6 md:gap-10 py-2">
-        <FaReact
+        <img
           onClick={() => setSelectedAboutme(buttons.aboutme)}
-          className={`w-16 h-16 md:w-24 md:h-24 ${
+          className={`w-24 h-24 md:w-48 md:h-48 ${
             selectedAboutme === buttons.aboutme
               ? "border-2 border-highlight rounded-lg"
               : ""
           }`}
-        ></FaReact>
-        <FaReact
+          src="src/assets/images/me.png"
+        ></img>
+        <img
           onClick={() => setSelectedAboutme(buttons.it)}
-          className={`w-16 h-16 md:w-24 md:h-24 ${
+          className={`w-24 h-24 md:w-48 md:h-48 ${
             selectedAboutme === buttons.it
               ? "border-2 border-highlight rounded-lg"
               : ""
           }`}
-        ></FaReact>
-        <FaReact
+          src="src/assets/images/me_it.png"
+        ></img>
+        <img
           onClick={() => setSelectedAboutme(buttons.hobbys)}
-          className={`w-16 h-16 md:w-24 md:h-24 ${
+          className={`w-24 h-24 md:w-48 md:h-48 ${
             selectedAboutme === buttons.hobbys
               ? "border-2 border-highlight rounded-lg"
               : ""
           }`}
-        ></FaReact>
+          src="src/assets/images/me_hobby.png"
+        ></img>
       </div>
 
       <div className="bg-elementbg rounded-lg border-2 border-default w-16 w-92 md:w-184 break-all">
