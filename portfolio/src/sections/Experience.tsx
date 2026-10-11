@@ -46,7 +46,7 @@ function Experience({ t }: { t: Translation }) {
           currentOptions.map((option, i) => (
             <li key={i} className="flex gap-2 mt-2">
               <span className="ml-2 w-2"> {i === cursor ? ">" : ""}</span>
-              <span>{option.label}</span>
+              <TypewriterEffect text={option.label}></TypewriterEffect>
             </li>
           ))
         )}
