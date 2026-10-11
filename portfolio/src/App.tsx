@@ -2,9 +2,9 @@ import Header from "./sections/Header.tsx";
 import { useState } from "react";
 import { translations, type Language } from "./data/translations";
 import Aboutme from "./sections/Aboutme";
-import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Footer from "./sections/Footer.tsx";
+import Experience from "./sections/Experience.tsx";
 
 function App() {
   const [language, setLanguage] = useState<Language>("de");

@@ -5,25 +5,28 @@ import { AiFillCaretUp } from "react-icons/ai";
 import { AiFillCaretDown } from "react-icons/ai";
 import { AiFillCaretLeft } from "react-icons/ai";
 import { AiFillCaretRight } from "react-icons/ai";
+import type { ExperienceItem } from "../ConsoleLogic";
 
 function Experience({ t }: { t: Translation }) {
-  const experience = {
-    work: {
+  const experience: ExperienceItem[] = [
+    {
+      id: "work",
       label: t.workExperience,
       items: [
-        { label: "Cybersystems", text: t.cybersystems },
-        { label: "Flumerics", text: t.flumerics },
+        { id: "cybersystems", label: "Cybersystems", text: t.cybersystems },
+        { id: "flumerics", label: "Flumerics", text: t.flumerics },
       ],
     },
-    club: {
+    {
+      id: "club",
       label: t.clubExperience,
       items: [
-        { label: "Alias", text: t.alias },
-        { label: "ZUR", text: t.zur },
-        { label: "Frackwoche", text: t.frackwoche },
+        { id: "alias", label: "Alias", text: t.alias },
+        { id: "zur", label: "Zurich Uas Racing", text: t.zur },
+        { id: "frackwoche", label: "Frackwoche 2025", text: t.frackwoche },
       ],
     },
-  };
+  ];
 
   return (
     <section
