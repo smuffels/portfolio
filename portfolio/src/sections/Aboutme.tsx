@@ -49,25 +49,19 @@ function Aboutme({ t }: { t: Translation }) {
       </div>
 
       <div className="bg-elementbg rounded-lg border-2 border-default w-16 w-92 md:w-184 break-all">
-        {selectedAboutme == buttons.aboutme && (
-          <TypewriterEffect text={t.aboutme.aboutmee} />
-        )}
-        {selectedAboutme == buttons.it && (
-          <TypewriterEffect text={t.aboutme.aboutmeIt} />
-        )}
+        {selectedAboutme == buttons.aboutme && <p>{t.aboutme.aboutmee}</p>}
+        {selectedAboutme == buttons.it && <p>{t.aboutme.aboutmeIt}</p>}
         {selectedAboutme == buttons.hobbys && (
           <div className="ml-2 mr-2">
-            <TypewriterEffect text={t.aboutme.hobbysIntro} />
-
+            <p>{t.aboutme.hobbysIntro}</p>
             <ul className="list-disc list-inside text-left mt-2 mb-2">
               {t.aboutme.hobbys.map((hobby: string, i: number) => (
                 <li key={i}>
-                  <TypewriterEffect text={hobby} />
+                  <span>{hobby}</span>
                 </li>
               ))}
             </ul>
-
-            <TypewriterEffect text={t.aboutme.hobbysOutro} />
+            <p>{t.aboutme.hobbysOutro}</p>
             <a href="https://www.instagram.com/fresh_trance/" target="_blank">
               <AiOutlineInstagram className="size-6 mt-2" />
             </a>
