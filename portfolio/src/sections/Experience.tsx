@@ -33,10 +33,10 @@ function Experience({ t }: { t: Translation }) {
   return (
     <section
       id="experience"
-      className="flex-1 flex flex-col items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
+      className="flex gap-2 flex-col items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
     >
       {/* text */}
-      <div className="bg-elementbg rounded-lg border-2 border-default w-92 md:w-184 h-8 md:h-64 break-all">
+      <div className="bg-elementbg rounded-lg border-2 border-default w-92 md:w-184 break-all">
         {selectedLeaf ? (
           <TypewriterEffect
             text={selectedLeaf.text!}
@@ -44,8 +44,8 @@ function Experience({ t }: { t: Translation }) {
           ></TypewriterEffect>
         ) : (
           currentOptions.map((option, i) => (
-            <li key={i} className="flex gap-2 mt-2">
-              <span className="ml-2 w-2"> {i === cursor ? ">" : ""}</span>
+            <li key={i} className="flex gap-2 m-2">
+              <span className="w-2"> {i === cursor ? ">" : ""}</span>
               <TypewriterEffect text={option.label}></TypewriterEffect>
             </li>
           ))
@@ -56,59 +56,59 @@ function Experience({ t }: { t: Translation }) {
       <div className="relative inline-block">
         <img
           src="src/assets/images/nintendo_console.svg"
-          className="w-92 md:w-184"
+          className="w-80 md:w-168"
         ></img>
         {/* bottom buttons */}
-        <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[45.5%] left-[83%]">
+        <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[40%] left-[84.9%]">
           <p className="md:text-2xl  font-semibold">A</p>
         </button>
-        <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[55.3%] left-[74.6%]">
+        <button className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[57%] left-[76.2%]">
           <p className=" md:text-2xl font-semibold">B</p>
         </button>
         {/* top buttons */}
         <button
-          className="bg-background text-default hover:text-highlight rounded-full absolute top-[36%] left-[74%]"
+          className="bg-background text-default hover:text-highlight rounded-full absolute top-[23%] left-[75.5%]"
           onClick={select}
         >
           <AiOutlineCheck className="size-6 md:size-12 font-semibold" />
         </button>
         <button
-          className="bg-background text-default hover:text-highlight rounded-full absolute top-[46%] left-[65.5%]"
+          className="bg-background text-default hover:text-highlight rounded-full absolute top-[40.5%] left-[66.4%]"
           onClick={goBack}
         >
           <AiOutlineClose className="size-6 md:size-12 font-semibold" />
         </button>
         {/* up button */}
         <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[39.2%] left-[20.6%]"
+          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[29.2%] left-[19.4%]"
           onClick={goUp}
         >
-          <AiFillCaretUp className="size-6 md:size-10  font-semibold" />
+          <AiFillCaretUp className="size-5 md:size-10  font-semibold" />
         </button>
         {/* down button */}
         <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[54.3%] left-[20.6%]"
+          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[55.2%] left-[19.4%]"
           onClick={goDown}
         >
-          <AiFillCaretDown className="size-6 md:size-10  font-semibold" />
+          <AiFillCaretDown className="size-5 md:size-10  font-semibold" />
         </button>
         {/* left button */}
         <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[47%] left-[15.3%]"
+          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[42.4%] left-[13.9%]"
           onClick={goBack}
         >
-          <AiFillCaretLeft className="size-6 md:size-10  font-semibold" />
+          <AiFillCaretLeft className="size-5 md:size-10  font-semibold" />
         </button>
         {/* right button */}
         <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[47%] left-[26%]"
+          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[42.4%] left-[25%]"
           onClick={select}
         >
-          <AiFillCaretRight className="size-6 md:size-10  font-semibold" />
+          <AiFillCaretRight className="size-5 md:size-10  font-semibold" />
         </button>
 
         {/* select button */}
-        <button className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[38.3%]">
+        <button className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[38%]">
           <p className="hidden justify-center md:flex font-semibold rotate-180">
             select
           </p>
