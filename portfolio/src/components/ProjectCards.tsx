@@ -1,4 +1,5 @@
 import type { Project } from "../CarouselLogic";
+import type { Translation } from "../data/translations";
 import HeartProgress from "./HeartProgress";
 import { DiGithubBadge } from "react-icons/di";
 
@@ -6,10 +7,12 @@ function ProjectCards({
   project,
   className,
   isActive,
+  t,
 }: {
   project: Project;
   className?: string;
   isActive?: boolean;
+  t: Translation;
 }) {
   const textColor = isActive ? "text-highlight" : "text-default";
   return (
@@ -26,6 +29,7 @@ function ProjectCards({
       )}
 
       <div className="absolute top-3 left-3">
+        <p className={textColor}>{t.projectProgress}</p>
         <HeartProgress heartColor={textColor} progress={project.progress} />
       </div>
 

@@ -13,6 +13,7 @@ export const translations = {
         "kreative Projekte umfasst einiges. Ob etwas basteln, programmieren, schneiden oder Visuals in Blender zu erstellen, so lange ich mich kreativ ausleben kann, mach ich es gern. Pluspunkt, wenn ich dabei einen neuen Skill lernen kann. Mit einigen Freunden konnte ich dieses Jahr ein eigenes Event organisieren. Einblicke darin sind hier ersichtlich:",
     },
 
+    projectProgress: "Fortschritt: ",
     project1title: "Game of life",
     project1summary:
       "Dieses Projekt ist eine Umsetzung von Conways „Game of Life“, die ich während meines Studiums als ersten Einstieg in Swift erstellt habe. Ich habe es ein wenig überarbeitet und einige Funktionen sowie ein neues Design hinzugefügt.",
@@ -47,6 +48,7 @@ export const translations = {
         "Creative projects cover a wide range of activities. Whether it’s making something, programming, editing or creating visuals in Blender, as long as I can express myself creatively, I’m happy to do it. It’s a bonus if I can learn a new skill in the process. Together with some friends, I was able to organise an event this year. You can see some highlights here:",
     },
 
+    projectProgress: "progress: ",
     project1title: "Game of life",
     project1summary:
       "This project is an implementation of Conway's Game of Life that i did during my studies as a first introduction to Swift. I have reworked it a bit and added some features as well as a new design",

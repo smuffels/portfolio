@@ -47,6 +47,7 @@ function Projects({ t }: { t: Translation }) {
         <ProjectCards
           project={prev}
           className="hidden md:block opacity-50"
+          t={t}
         ></ProjectCards>
 
         {/* button left */}
@@ -68,6 +69,7 @@ function Projects({ t }: { t: Translation }) {
             project={current}
             className="border-2"
             isActive
+            t={t}
           ></ProjectCards>
         </div>
 
@@ -83,6 +85,7 @@ function Projects({ t }: { t: Translation }) {
         <ProjectCards
           project={next}
           className="hidden md:block opacity-50"
+          t={t}
         ></ProjectCards>
       </div>
     </section>
