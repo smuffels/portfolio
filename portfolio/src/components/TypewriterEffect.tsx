@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 
-function TypewriterEffect({ text }: { text: string }) {
+function TypewriterEffect({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) {
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -17,7 +23,7 @@ function TypewriterEffect({ text }: { text: string }) {
     return () => clearInterval(interval);
   }, [text]);
 
-  return <span>{displayedText}</span>;
+  return <p className={className}>{displayedText}</p>;
 }
 
 export default TypewriterEffect;
