@@ -53,14 +53,13 @@ function Projects({ t }: { t: Translation }) {
         {/* button left */}
         <button
           onClick={goPrev}
-          className="bg-elementbg group hover:bg-default h-60 w-10 flex items-center justify-center rounded-lg"
+          className="bg-elementbg group border-2 md:hover:bg-default md:border-0 h-60 w-6 md:w-10 flex items-center justify-center rounded-lg"
         >
           <AiFillCaretLeft className="size-6 group-hover:text-elementbg" />
         </button>
-
         <div className="relative">
           {/* title */}
-          <div className="absolute -top-16 w-92 h-12 md:w-128 rounded-lg bg-elementbg text-highlight flex items-center justify-center font-title border-2 border-default">
+          <div className="absolute -top-16  w-full max-w-92 h-12 md:w-128 rounded-lg bg-elementbg text-highlight flex items-center justify-center font-title border-2 border-default">
             {current.title}
           </div>
 
@@ -76,7 +75,7 @@ function Projects({ t }: { t: Translation }) {
         {/* button right */}
         <button
           onClick={goNext}
-          className="bg-elementbg group hover:bg-default hover:border-2 h-60 w-10 flex items-center justify-center rounded-lg"
+          className="bg-elementbg group border-2 md:hover:bg-default md:border-0 h-60 w-6 md:w-10 flex items-center justify-center rounded-lg"
         >
           <AiFillCaretRight className="size-6 group-hover:text-elementbg" />
         </button>

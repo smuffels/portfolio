@@ -1,7 +1,5 @@
-import { FaReact } from "react-icons/fa";
 import { useState } from "react";
 import type { Translation } from "../data/translations";
-import TypewriterEffect from "../components/TypewriterEffect";
 import { AiOutlineInstagram } from "react-icons/ai";
 
 function Aboutme({ t }: { t: Translation }) {
@@ -48,7 +46,7 @@ function Aboutme({ t }: { t: Translation }) {
         ></img>
       </div>
 
-      <div className="bg-elementbg rounded-lg border-2 border-default w-16 w-92 md:w-184 break-all">
+      <div className="bg-elementbg rounded-lg border-2 border-default w-full md:w-184 break-all">
         {selectedAboutme == buttons.aboutme && <p>{t.aboutme.aboutmee}</p>}
         {selectedAboutme == buttons.it && <p>{t.aboutme.aboutmeIt}</p>}
         {selectedAboutme == buttons.hobbys && (

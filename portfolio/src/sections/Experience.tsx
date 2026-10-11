@@ -40,7 +40,7 @@ function Experience({ t }: { t: Translation }) {
       className="flex gap-2 flex-col items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
     >
       {/* text */}
-      <div className="bg-elementbg rounded-lg border-2 border-default w-92 md:w-184 break-all">
+      <div className="bg-elementbg rounded-lg border-2 border-default w-full md:w-184 break-all">
         {konamiActive ? (
           <TypewriterEffect
             text="pls hire me :)"
