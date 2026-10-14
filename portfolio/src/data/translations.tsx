@@ -6,9 +6,9 @@ export const translations = {
 
     aboutme: {
       aboutmee:
-        "Hallo ich bin Céline, 25ig und gerade...... Was mich an der It besondbers anspricht ",
+        "Hallo ich bin Céline, 25 Jahre alt und Informatikerin. Ich bin gerade auf der Suche nach einer neuen Herausforderung aka einem Job. Ich bin gut darin Probleme zu lösen und lerne gern Neues. Daher auch mein Interesse an der Informatik. ",
       itIntro:
-        "Mein Weg in der IT begann mit der Ausbildung zur Applikationsentwicklerin EFZ in der Informatikmittelschule. Nach einem 1-jährigen Praktikum als Teil der Ausbildung habe ich mich dann dafür entschieden Informatik noch zu studieren. Nach erfolgreichem Beenden meines Studiums an der ZHAW bin ich nun auf der Suche für die nächste Herausforderung.",
+        "Mein Weg in der IT begann mit der Ausbildung zur Applikationsentwicklerin EFZ in der Informatikmittelschule. Nach einem 1-jährigen Praktikum als Teil der Ausbildung habe ich mich dann dafür entschieden Informatik zu studieren. Nach erfolgreichem Abschluss meines Studiums an der ZHAW bin ich nun auf der Suche für die nächste Herausforderung.",
       itTitle: "Skills:",
       itSkills: [
         "C#",
@@ -54,7 +54,8 @@ export const translations = {
     projects: "Projects",
 
     aboutme: {
-      aboutmee: "Hi, it's me. This is a short aboutme",
+      aboutmee:
+        "Hi, I’m Céline, 25 years old and a computer scientist. I’m currently looking for a new challenge aka a job. I’m good at solving problems and enjoy learning new things. That’s why I’m interested in computer science.",
       itIntro:
         "My career in IT began with an EFZ apprenticeship as an applications developer at a secondary school specialising in computer science. Following a one-year work placement as part of the apprenticeship, I decided to go on to study computer science at university. Having successfully completed my degree at the ZHAW, I am now looking for my next challenge.",
       itTitle: "Skills:",

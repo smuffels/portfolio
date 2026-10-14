@@ -43,7 +43,9 @@ function Aboutme({ t }: { t: Translation }) {
         ></img>
       </div>
       <div className="bg-elementbg mx-auto rounded-lg border-2 border-default w-full md:w-184 break-all">
-        {selectedAboutme == buttons.aboutme && <p>{t.aboutme.aboutmee}</p>}
+        {selectedAboutme == buttons.aboutme && (
+          <p className="ml-2 mr-2">{t.aboutme.aboutmee}</p>
+        )}
         {selectedAboutme == buttons.it && (
           <div className="ml-2 mr-2">
             <p>{t.aboutme.itIntro}</p>
