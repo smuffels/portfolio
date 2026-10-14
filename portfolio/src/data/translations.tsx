@@ -41,8 +41,10 @@ export const translations = {
     workExperience: "Arbeitserfahrung",
     clubExperience: "Vereinserfahrung",
 
-    cybersystems: "cybersstems text",
-    flumerics: "flumerics text",
+    cybersystems:
+      "Die Cybersystems bietet Individualisierung von Microsoft Dynamics 365 an. Meine Aufgabe war es hauptsächlich diese mittels C#, JavaScript oder Low-Code umzusetzen. Als Teil der Individualisierung konnte ich ebenfalls an einigen Plugins arbeiten. Als Abschlussarbeit für meine Ausbildung habe ich einen Batch-Task programmiert, der die Daten eines Aufrufs der Firmenwebseite im CRM als Opportunity angelegt hat.",
+    flumerics:
+      "Bei Flumerics habe ich hauptsächlich mit C# gearbeitet. Da eine Dienstleistung das Erstellen von Custom Microsoft CRM Plugins war, war es meine Aufgabe Tests für diese Plugins zu schreiben. Eine andere Aufgabe war es das Kontaktformular der Webseite automatisiert zu testen. Für diese Aufgabe konnte ich mit Selenium arbeiten. Für die regelmässige automatisierte Ausführung des Tests habe ich Azure Pipelines benutzt.",
 
     alias: "alias text",
     zur: "zur text",
@@ -90,8 +92,10 @@ export const translations = {
     workExperience: "work experience",
     clubExperience: "club experience",
 
-    cybersystems: "cybersstems text",
-    flumerics: "flumerics text",
+    cybersystems:
+      "Cybersystems offers customisation services for Microsoft Dynamics 365. My main role was to implement these using C#, JavaScript or low-code tools. As part of the customisation work, I was also able to work on a number of plugins. For my final project as part of my apprenticeship, I programmed a batch task that created an opportunity in the CRM based on data from a visit to the company’s website.",
+    flumerics:
+      "At Flumerics, I mainly worked with C#. As one of the services we provided was the development of custom Microsoft CRM plugins, my role involved writing tests for these plugins. Another task was to carry out automated testing of the website’s contact form. For this task, I was able to use Selenium. I used Azure Pipelines to run the tests automatically on a regular basis.",
 
     alias: "alias text",
     zur: "zur text",
