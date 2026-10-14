@@ -5,12 +5,26 @@ export const translations = {
     projects: "Projekte",
 
     aboutme: {
-      aboutmee: "Hallo ich bins. Das ist ein kurzes aboutme",
-      aboutmeIt: "Das ist spezifischer über meine it skills und so",
-      hobbysIntro: "hobbys: ",
-      hobbys: ["geige spielen", "lesen", "sport", "kreative projekte"],
+      aboutmee:
+        "Hallo ich bin Céline, 25ig und gerade...... Was mich an der It besondbers anspricht ",
+      itIntro:
+        "Mein Weg in der IT begann mit der Ausbildung zur Applikationsentwicklerin EFZ in der Informatikmittelschule. Nach einem 1-jährigen Praktikum als Teil der Ausbildung habe ich mich dann dafür entschieden Informatik noch zu studieren. Nach erfolgreichem Beenden meines Studiums an der ZHAW bin ich nun auf der Suche für die nächste Herausforderung.",
+      itTitle: "Skills:",
+      itSkills: [
+        "C#",
+        "Java",
+        "JavaScript",
+        "React",
+        "Python",
+        "MySQL",
+        "Swift",
+      ],
+      itOutro:
+        "Dies ist ein kleiner Einblick in die Technologien mit denen ich bereits Erfahrungen sammeln konnte. Eine kleine Übersicht der IT-Projekte die ich nach dem Studium umgesetzt habe ist ganz unten ersichtlich.",
+      hobbysIntro: "Hobbys: ",
+      hobbys: ["Geige spielen", "Lesen", "Sport", "Kreative Projekte"],
       hobbysOutro:
-        "kreative Projekte umfasst einiges. Ob etwas basteln, programmieren, schneiden oder Visuals in Blender zu erstellen, so lange ich mich kreativ ausleben kann, mach ich es gern. Pluspunkt, wenn ich dabei einen neuen Skill lernen kann. Mit einigen Freunden konnte ich dieses Jahr ein eigenes Event organisieren. Einblicke darin sind hier ersichtlich:",
+        "Kreative Projekte umfasst einiges. Ob etwas basteln, programmieren, schneiden oder Visuals in Blender zu erstellen, so lange ich mich kreativ ausleben kann, mach ich es gern. Pluspunkt, wenn ich dabei einen neuen Skill lernen kann. Mit einigen Freunden konnte ich dieses Jahr ein eigenes Event organisieren. Einblicke darin sind hier ersichtlich:",
     },
 
     projectProgress: "Fortschritt: ",
@@ -41,7 +55,20 @@ export const translations = {
 
     aboutme: {
       aboutmee: "Hi, it's me. This is a short aboutme",
-      aboutmeIt: "This is more about me in It. Skills and maybe why i like it",
+      itIntro:
+        "My career in IT began with an EFZ apprenticeship as an applications developer at a secondary school specialising in computer science. Following a one-year work placement as part of the apprenticeship, I decided to go on to study computer science at university. Having successfully completed my degree at the ZHAW, I am now looking for my next challenge.",
+      itTitle: "Skills:",
+      itSkills: [
+        "C#",
+        "Java",
+        "JavaScript",
+        "React",
+        "Python",
+        "MySQL",
+        "Swift",
+      ],
+      itOutro:
+        "This is a brief insight into the technologies I have already gained experience with. A brief overview of the IT projects I have carried out since completing my degree can be found at the very bottom.",
       hobbysIntro: "hobbys: ",
       hobbys: ["playing the violin", "reading", "sports", "creative projects"],
       hobbysOutro:
