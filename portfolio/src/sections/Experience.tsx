@@ -35,125 +35,124 @@ function Experience({ t }: { t: Translation }) {
   const [konamiActive, setKonamiActive] = useState(false);
   const { registerInput } = useCheatcode(() => setKonamiActive(true));
   return (
-    <section
-      id="experience"
-      className="flex gap-2 flex-col items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
-    >
-      {/* text */}
-      <div className="bg-elementbg rounded-lg border-2 border-default w-full md:w-184 break-all">
-        {konamiActive ? (
-          <TypewriterEffect
-            text="pls hire me :)"
-            className="m-2"
-          ></TypewriterEffect>
-        ) : selectedLeaf ? (
-          <TypewriterEffect
-            text={selectedLeaf.text!}
-            className="m-2"
-          ></TypewriterEffect>
-        ) : (
-          currentOptions.map((option, i) => (
-            <li key={i} className="flex gap-2 m-2">
-              <span className="w-2"> {i === cursor ? ">" : ""}</span>
-              <TypewriterEffect text={option.label}></TypewriterEffect>
-            </li>
-          ))
-        )}
-      </div>
+    <section id="experience" className="px-4 py-16">
+      <div className="flex gap-2 flex-col items-center">
+        {/* text */}
+        <div className="bg-elementbg rounded-lg border-2 border-default w-full md:w-184 break-all">
+          {konamiActive ? (
+            <TypewriterEffect
+              text="pls hire me :)"
+              className="m-2"
+            ></TypewriterEffect>
+          ) : selectedLeaf ? (
+            <TypewriterEffect
+              text={selectedLeaf.text!}
+              className="m-2"
+            ></TypewriterEffect>
+          ) : (
+            currentOptions.map((option, i) => (
+              <li key={i} className="flex gap-2 m-2">
+                <span className="w-2"> {i === cursor ? ">" : ""}</span>
+                <TypewriterEffect text={option.label}></TypewriterEffect>
+              </li>
+            ))
+          )}
+        </div>
 
-      {/* controller */}
-      <div className="relative inline-block">
-        <img
-          src="src/assets/images/nintendo_console.svg"
-          className="w-80 md:w-168"
-        ></img>
-        {/* bottom buttons */}
-        <button
-          className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[40%] left-[84.9%]"
-          onClick={() => registerInput("a")}
-        >
-          <p className="md:text-2xl  font-semibold">A</p>
-        </button>
-        <button
-          className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[57%] left-[76.2%]"
-          onClick={() => registerInput("b")}
-        >
-          <p className=" md:text-2xl font-semibold">B</p>
-        </button>
-        {/* top buttons */}
-        <button
-          className="bg-background text-default hover:text-highlight rounded-full absolute top-[23%] left-[75.5%]"
-          onClick={select}
-        >
-          <AiOutlineCheck className="size-6 md:size-12 font-semibold" />
-        </button>
-        <button
-          className="bg-background text-default hover:text-highlight rounded-full absolute top-[40.5%] left-[66.4%]"
-          onClick={() => {
-            goBack();
-            setKonamiActive(false);
-          }}
-        >
-          <AiOutlineClose className="size-6 md:size-12 font-semibold" />
-        </button>
-        {/* up button */}
-        <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[29.2%] left-[19.4%]"
-          onClick={() => {
-            goUp();
-            registerInput("up");
-          }}
-        >
-          <AiFillCaretUp className="size-5 md:size-10  font-semibold" />
-        </button>
-        {/* down button */}
-        <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[55.2%] left-[19.4%]"
-          onClick={() => {
-            goDown();
-            registerInput("down");
-          }}
-        >
-          <AiFillCaretDown className="size-5 md:size-10  font-semibold" />
-        </button>
-        {/* left button */}
-        <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[42.4%] left-[13.9%]"
-          onClick={() => {
-            goBack();
-            registerInput("left");
-          }}
-        >
-          <AiFillCaretLeft className="size-5 md:size-10  font-semibold" />
-        </button>
-        {/* right button */}
-        <button
-          className="bg-background text-default hover:text-highlight rounded-lg absolute top-[42.4%] left-[25%]"
-          onClick={() => {
-            select();
-            registerInput("right");
-          }}
-        >
-          <AiFillCaretRight className="size-5 md:size-10  font-semibold" />
-        </button>
+        {/* controller */}
+        <div className="relative inline-block">
+          <img
+            src="src/assets/images/nintendo_console.svg"
+            className="w-80 md:w-168"
+          ></img>
+          {/* bottom buttons */}
+          <button
+            className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[40%] left-[84.9%]"
+            onClick={() => registerInput("a")}
+          >
+            <p className="md:text-2xl  font-semibold">A</p>
+          </button>
+          <button
+            className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[57%] left-[76.2%]"
+            onClick={() => registerInput("b")}
+          >
+            <p className=" md:text-2xl font-semibold">B</p>
+          </button>
+          {/* top buttons */}
+          <button
+            className="bg-background text-default hover:text-highlight rounded-full absolute top-[23%] left-[75.5%]"
+            onClick={select}
+          >
+            <AiOutlineCheck className="size-6 md:size-12 font-semibold" />
+          </button>
+          <button
+            className="bg-background text-default hover:text-highlight rounded-full absolute top-[40.5%] left-[66.4%]"
+            onClick={() => {
+              goBack();
+              setKonamiActive(false);
+            }}
+          >
+            <AiOutlineClose className="size-6 md:size-12 font-semibold" />
+          </button>
+          {/* up button */}
+          <button
+            className="bg-background text-default hover:text-highlight rounded-lg absolute top-[29.2%] left-[19.4%]"
+            onClick={() => {
+              goUp();
+              registerInput("up");
+            }}
+          >
+            <AiFillCaretUp className="size-5 md:size-10  font-semibold" />
+          </button>
+          {/* down button */}
+          <button
+            className="bg-background text-default hover:text-highlight rounded-lg absolute top-[55.2%] left-[19.4%]"
+            onClick={() => {
+              goDown();
+              registerInput("down");
+            }}
+          >
+            <AiFillCaretDown className="size-5 md:size-10  font-semibold" />
+          </button>
+          {/* left button */}
+          <button
+            className="bg-background text-default hover:text-highlight rounded-lg absolute top-[42.4%] left-[13.9%]"
+            onClick={() => {
+              goBack();
+              registerInput("left");
+            }}
+          >
+            <AiFillCaretLeft className="size-5 md:size-10  font-semibold" />
+          </button>
+          {/* right button */}
+          <button
+            className="bg-background text-default hover:text-highlight rounded-lg absolute top-[42.4%] left-[25%]"
+            onClick={() => {
+              select();
+              registerInput("right");
+            }}
+          >
+            <AiFillCaretRight className="size-5 md:size-10  font-semibold" />
+          </button>
 
-        {/* select button */}
-        <button className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[38%]">
-          <p className="hidden justify-center md:flex font-semibold rotate-180">
-            select
-          </p>
-          <p className="md:hidden font-semibold text-xs rotate-180">slct</p>
-        </button>
-        {/* start button */}
-        <button
-          className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[48.6%]"
-          onClick={() => registerInput("start")}
-        >
-          <p className="hidden justify-center md:flex font-semibold rotate-180">
-            start
-          </p>
-          <p className="md:hidden font-semibold text-xs rotate-180">strt</p>
-        </button>
+          {/* select button */}
+          <button className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[38%]">
+            <p className="hidden justify-center md:flex font-semibold rotate-180">
+              select
+            </p>
+            <p className="md:hidden font-semibold text-xs rotate-180">slct</p>
+          </button>
+          {/* start button */}
+          <button
+            className="bg-background text-default hover:text-highlight rounded-full w-7 h-3 md:w-14 md:h-6 rotate-140 absolute top-[52%] left-[48.6%]"
+            onClick={() => registerInput("start")}
+          >
+            <p className="hidden justify-center md:flex font-semibold rotate-180">
+              start
+            </p>
+            <p className="md:hidden font-semibold text-xs rotate-180">strt</p>
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-default font-default overflow-x-hidden">
       <Header t={t} language={language} setLanguage={setLanguage} />
-      <main className="flex-1 flex flex-col">
+      <main className="flex flex-1 flex-col">
         <Aboutme t={t} />
         <Experience t={t} />
         <Projects t={t} />

@@ -12,10 +12,7 @@ function Aboutme({ t }: { t: Translation }) {
   const [selectedAboutme, setSelectedAboutme] = useState(buttons.aboutme);
 
   return (
-    <section
-      id="home"
-      className="grid items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
-    >
+    <section id="home" className="py-16 px-4">
       <div className="flex justify-center gap-6 md:gap-10 py-2">
         <img
           onClick={() => setSelectedAboutme(buttons.aboutme)}
@@ -45,8 +42,7 @@ function Aboutme({ t }: { t: Translation }) {
           src="src/assets/images/me_hobby.png"
         ></img>
       </div>
-
-      <div className="bg-elementbg rounded-lg border-2 border-default w-full md:w-184 break-all">
+      <div className="bg-elementbg mx-auto rounded-lg border-2 border-default w-full md:w-184 break-all">
         {selectedAboutme == buttons.aboutme && <p>{t.aboutme.aboutmee}</p>}
         {selectedAboutme == buttons.it && <p>{t.aboutme.aboutmeIt}</p>}
         {selectedAboutme == buttons.hobbys && (
