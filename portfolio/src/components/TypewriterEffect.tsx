@@ -18,7 +18,7 @@ function TypewriterEffect({
       if (index === text.length) {
         clearInterval(interval);
       }
-    }, 30);
+    }, 25);
 
     return () => clearInterval(interval);
   }, [text]);
