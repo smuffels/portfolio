@@ -46,9 +46,11 @@ export const translations = {
     flumerics:
       "Bei Flumerics habe ich hauptsächlich mit C# gearbeitet. Da eine Dienstleistung das Erstellen von Custom Microsoft CRM Plugins war, war es meine Aufgabe Tests für diese Plugins zu schreiben. Eine andere Aufgabe war es das Kontaktformular der Webseite automatisiert zu testen. Für diese Aufgabe konnte ich mit Selenium arbeiten. Für die regelmässige automatisierte Ausführung des Tests habe ich Azure Pipelines benutzt.",
 
-    alias: "alias text",
-    zur: "zur text",
-    frackwoche: "frackwoche text",
+    alias:
+      "Beim Alias habe ich mit einer Mitstudentin das Co-Präsidium der Sektion T (School of Engineering) übernommen. Eine meiner Aufgaben war es die Sitzungen des Sektionsrates vorzubereiten und zu führen. Ausserdem war ich für die Kommunikation von studentischen Anliegen an die Hochschulleitung verantwortlich. Ebenfalls habe ich die Organisation von Events durch die Sektionsratsmitglieder überschaut und selbst für meinen Studiengang einige Events wie Laser Tag und eine Game Night organisiert.",
+    zur: "ZUR ist das Formula Student Team der ZHAW. In meiner Zeit dort war ich im Driverless Subteam und habe dort neben kleineren Tasks für das DV System ein Fahrer Display gearbeitet. Der erste Teil dafür war die Kommunikation zwischen der Electrical Control Unit und dem DV System zu regeln. Ohne dies wäre es nicht möglich gewesen, danach die gewünschten Daten auf dem Fahrerdisplay darzustellen. Der zweite Teil war dann das Design und die Programmierung des Fahrerdisplays und diesen ins Auto einzubinden.",
+    frackwoche:
+      "Beim Verein Frackwoche 2025 war ich als Co-Präsidentin tätig. Zu Beginn ging es vor allem darum, meine Mitstudierenden zu motivieren, dem Verein beizutreten und dadurch alle benötigten Ressorts abzudecken. Als dies gemacht war und allen klar war, was ihre Aufgaben waren, ging es hauptsächlich darum, alle Ressorts im Überblick zu haben und bei Problemen zu helfen. Ebenfalls lief die Kommunikation der Marketing und Logistik Abteilungen der Hochschule über uns. Nebst meinen Pflichten als Co-Präsidentin habe ich die Closing Party der Frackwoche in Zusammenarbeit mit 3 Winterthurer Clubs organisiert.",
   },
   en: {
     home: "Home",
@@ -97,9 +99,11 @@ export const translations = {
     flumerics:
       "At Flumerics, I mainly worked with C#. As one of the services we provided was the development of custom Microsoft CRM plugins, my role involved writing tests for these plugins. Another task was to carry out automated testing of the website’s contact form. For this task, I was able to use Selenium. I used Azure Pipelines to run the tests automatically on a regular basis.",
 
-    alias: "alias text",
-    zur: "zur text",
-    frackwoche: "frackwoche text",
+    alias:
+      "At Alias, I took on the role of co-chair of Section T (School of Engineering) alongside a fellow student. One of my responsibilities was to prepare and chair the Section Council meetings. I was also responsible for communicating students’ concerns to the university management. I also oversaw the organisation of events by the Section Council members and organised a number of events myself for my degree programme, such as laser tag and a games night.",
+    zur: "ZUR is the ZHAW Formula Student team.  Whilst I was there, I was part of the Driverless sub-team, where, alongside some minor tasks for the DV system, I worked on a driver display. The first part of this involved managing the communication between the Electrical Control Unit and the DV system. Without this, it would not have been possible to subsequently display the required data on the driver display. The second part then involved designing and programming the driver display and integrating it into the car.",
+    frackwoche:
+      "I served as co-president of the Frackwoche 2025. At the start, the main focus was on encouraging my fellow students to join the society so that we could fill all the necessary roles. Once this was done and everyone was clear on their responsibilities, the main focus was on keeping track of all the departments and helping out when problems arose. We also handled communication between the university’s marketing and logistics departments. In addition to my duties as co-president, I organized the closing party for Frackwoche in collaboration with three clubs in Winterthur.",
   },
 };
 
