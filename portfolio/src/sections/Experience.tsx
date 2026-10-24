@@ -39,7 +39,7 @@ function Experience({ t }: { t: Translation }) {
     <section id="experience" className="px-4 py-16">
       <div className="flex gap-2 flex-col items-center">
         {/* text */}
-        <div className="bg-elementbg rounded-lg border-2 border-default w-full md:w-184 break-all">
+        <div className="bg-elementbg rounded-lg border-2 border-default w-full md:w-184 break-normal">
           {konamiActive ? (
             <TypewriterEffect
               text="pls hire me :)"
@@ -118,6 +118,7 @@ function Experience({ t }: { t: Translation }) {
             onClick={() => {
               goBack();
               registerInput("left");
+              setKonamiActive(false);
             }}
           >
             <AiFillCaretLeft className="size-5 md:size-10  font-semibold" />

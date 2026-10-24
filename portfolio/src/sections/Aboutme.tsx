@@ -45,14 +45,14 @@ function Aboutme({ t }: { t: Translation }) {
           src={meHobbySvg}
         ></img>
       </div>
-      <div className="bg-elementbg mx-auto rounded-lg border-2 border-default w-full md:w-184 break-all">
+      <div className="bg-elementbg mx-auto rounded-lg border-2 border-default w-full md:w-184 break-normal">
         {selectedAboutme == buttons.aboutme && (
           <p className="ml-2 mr-2">{t.aboutme.aboutmee}</p>
         )}
         {selectedAboutme == buttons.it && (
           <div className="ml-2 mr-2">
             <p>{t.aboutme.itIntro}</p>
-            <p>{t.aboutme.itTitle}</p>
+            <p className="mt-2">{t.aboutme.itTitle}</p>
             <ul className="list-disc list-inside text-left mt-2 mb-2">
               {t.aboutme.itSkills.map((hobby: string, i: number) => (
                 <li key={i}>
