@@ -61,8 +61,8 @@ function Experience({ t }: { t: Translation }) {
         </div>
 
         {/* controller */}
-        <div className="relative inline-block">
-          <img src={consoleSvg} className="w-80 md:w-168"></img>
+        <div className="relative w-full md:w-168">
+          <img src={consoleSvg} className="w-full"></img>
           {/* bottom buttons */}
           <button
             className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[40%] left-[84.9%]"
