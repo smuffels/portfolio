@@ -2,7 +2,7 @@ import { DiGithubBadge } from "react-icons/di";
 import { AiOutlineMail } from "react-icons/ai";
 
 const gitHub = "https://github.com/smuffels";
-const email = "";
+const email = "celine1brun@gmail.com";
 
 function SocialLinks({
   className,
