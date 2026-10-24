@@ -6,12 +6,14 @@ import { AiFillCaretRight } from "react-icons/ai";
 import { AiFillCaretUp } from "react-icons/ai";
 import { AiFillCaretDown } from "react-icons/ai";
 import { useCarousel } from "../CarouselLogic";
+import gameOfLifeImg from "../assets/images/game_of_life.png";
+import healthImage from "../assets/images/health_but_better.png";
 
 function Projects({ t }: { t: Translation }) {
   const projects: Project[] = [
     {
       id: 1,
-      image: "src/assets/images/game_of_life.png",
+      image: gameOfLifeImg,
       progress: 5,
       title: t.project1title,
       summary: t.project1summary,
@@ -20,7 +22,7 @@ function Projects({ t }: { t: Translation }) {
     },
     {
       id: 2,
-      image: "src/assets/images/health_but_better.png",
+      image: healthImage,
       progress: 3,
       title: t.project2title,
       summary: t.project2summary,

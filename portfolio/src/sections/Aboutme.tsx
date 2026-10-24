@@ -1,6 +1,9 @@
 import { useState } from "react";
 import type { Translation } from "../data/translations";
 import { AiOutlineInstagram } from "react-icons/ai";
+import meSvg from "../assets/images/me.png";
+import meItSvg from "../assets/images/me_it.png";
+import meHobbySvg from "../assets/images/me_hobby.png";
 
 function Aboutme({ t }: { t: Translation }) {
   const buttons = {
@@ -21,7 +24,7 @@ function Aboutme({ t }: { t: Translation }) {
               ? "border-2 border-highlight rounded-lg"
               : ""
           }`}
-          src="src/assets/images/me.png"
+          src={meSvg}
         ></img>
         <img
           onClick={() => setSelectedAboutme(buttons.it)}
@@ -30,7 +33,7 @@ function Aboutme({ t }: { t: Translation }) {
               ? "border-2 border-highlight rounded-lg"
               : ""
           }`}
-          src="src/assets/images/me_it.png"
+          src={meItSvg}
         ></img>
         <img
           onClick={() => setSelectedAboutme(buttons.hobbys)}
@@ -39,7 +42,7 @@ function Aboutme({ t }: { t: Translation }) {
               ? "border-2 border-highlight rounded-lg"
               : ""
           }`}
-          src="src/assets/images/me_hobby.png"
+          src={meHobbySvg}
         ></img>
       </div>
       <div className="bg-elementbg mx-auto rounded-lg border-2 border-default w-full md:w-184 break-all">

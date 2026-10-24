@@ -9,6 +9,7 @@ import { useConsole, type ExperienceItem } from "../ConsoleLogic";
 import TypewriterEffect from "../components/TypewriterEffect";
 import { useState } from "react";
 import { useCheatcode } from "../Cheatcode";
+import consoleSvg from "../assets/images/nintendo_console.svg";
 
 function Experience({ t }: { t: Translation }) {
   const experience: ExperienceItem[] = [
@@ -61,10 +62,7 @@ function Experience({ t }: { t: Translation }) {
 
         {/* controller */}
         <div className="relative inline-block">
-          <img
-            src="src/assets/images/nintendo_console.svg"
-            className="w-80 md:w-168"
-          ></img>
+          <img src={consoleSvg} className="w-80 md:w-168"></img>
           {/* bottom buttons */}
           <button
             className="bg-background size-6 md:size-12 text-default hover:text-highlight rounded-full absolute block top-[40%] left-[84.9%]"
