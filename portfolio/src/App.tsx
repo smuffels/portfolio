@@ -11,7 +11,7 @@ function App() {
   const t = translations[language];
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-default font-default overflow-x-hidden">
+    <div className="flex flex-col min-h-screen bg-background text-default font-default overflow-x-clip">
       <Header t={t} language={language} setLanguage={setLanguage} />
       <main className="flex flex-1 flex-col">
         <Aboutme t={t} />
